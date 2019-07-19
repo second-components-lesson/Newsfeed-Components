@@ -180,9 +180,8 @@ function articleCreator(allArticles) {
   button.addEventListener('click', event => {
     article.classList.toggle('article-open')
 
-    // Not Working Yet
-    // button.textContent = 'close'
-    if('article-open'){
+    // switch close/expand text on article
+    if(article.classList.contains('article-open')) {
       button.textContent = 'close'
     } else {
       button.textContent = 'expand'
